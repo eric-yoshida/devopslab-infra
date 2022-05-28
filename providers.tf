@@ -2,7 +2,7 @@ terraform {
   required_providers {
     google = {
       source = "hashicorp/google"
-      version = "4.22.0"
+      version = "4.12.0"
     }
   }
 }
@@ -11,6 +11,12 @@ terraform {
 provider "google" {
 
   project = "lab-devops-cloud-eric"
+  region  = "us-west1"
+  zone    = "us-west1-b"
+}
+
+provider "google-beta" {
+  project = "DEFINIR"
   region  = "us-west1"
   zone    = "us-west1-b"
 }
